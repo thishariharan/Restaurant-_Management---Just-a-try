@@ -1,0 +1,35 @@
+
+Open Xampp Control pannel
+
+Start Apache and MySql Servers
+
+GO to MySql admin page for db development
+
+Open VS code to create front end and use php as backend
+
+
+# The DB creation in MySql - food_shop
+
+# Create for Foods
+create table food(f_name varchar(50),f_code varchar(50),type varchar(20),qty int,price float);
+
+# Create for Waiters
+create table waiter(w_name varchar(50),w_code varchar(50),avail varchar(5),sal float,ph bigint,email varchar(50));
+
+# Create for Chefs
+create table chef(c_name varchar(50),c_code varchar(50),avail varchar(5),sal float,ph bigint,email varchar(50));
+INSERT INTO chef VALUES('Anbumani','c012','yes',8200,765432189,'chef@mani.com');		-- defaults
+
+# Create for Admin / Owner
+create table own(pass varchar(50),amt float,bil bigint);
+INSERT INTO own values('qwertyuiop',25000,1000);		-- DEfault
+
+# Create for Customers
+create table custums(cust varchar(50),pass varchar(50),ph bigint,email varchar(50));
+INSERT INTO custums VALUES('Harold','asdfghjkl',654765876,'maker@hamid.com');
+
+# Create for Cart
+create table cart(cust varchar(50),bil bigint,f_name varchar(50),f_code varchar(50),qty int,type varchar(20),tot float,tax float,disc float,f_tot float,dine varchar(5));
+
+# Create for Donation
+create table donate(cust varchar(50),amt float);
